@@ -1,0 +1,310 @@
+body {
+	font-size: 16px;
+	color: @font_color_base;
+	font-family: Lato, sans-serif;
+	background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, sans-serif;
+}
+
+h1 {
+	font-size: 3.75em;
+	line-height: 1.25;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 3.125em;
+}
+
+h3 {
+	font-size: 2.5em;
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 1.8em;
+}
+
+h5 {
+	font-size: 1.125em;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+h6 {
+	font-size: 0.9em;
+}
+
+p {
+	font-family: Lato, sans-serif;
+	color: @font_color_base;
+	line-height: 1.6;
+}
+
+a {
+	transition: all 0.3s;
+
+	&:hover {
+		text-decoration: none;
+		color: @font_color_alt;
+	}
+}
+
+iframe, video {
+	border: 0;
+}
+
+
+/*
+|----------------------------------------------------------------------------
+| HELPER CLASS
+|----------------------------------------------------------------------------
+*/
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-45 {
+	margin-bottom: 45px;
+}
+
+.mb-75 {
+	margin-bottom: 75px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+
+.info {
+	color: @font_color_base;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+.overlay {
+	.overlay();
+
+	.title-text {
+		color: #fff;
+	}
+
+	.sub-title {
+		color: darken(#fff, 25%);
+	}
+}
+
+.img-md-right,
+.img-md-left {
+	float: none;
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+@media screen and ( min-width: 992px ) {
+	.img-md-right {
+		float: right;
+	}
+
+	.img-md-left {
+		float: left;
+	}	
+}
+
+@media screen and ( max-width: 991px ) {
+	.pull-right {
+		float: none !important;
+		margin-bottom: 0;
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| BUTTONS
+|----------------------------------------------------------------------------
+*/
+.btn {
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.3s;
+}
+
+.btn-cmd {
+	padding: 14px 10px;
+	min-width: 210px;
+}
+
+.btn-base {
+	color: #fff;
+
+	&:focus {
+		color: #fff;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+
+	span {
+		font-family: Lato, sans-serif;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+}
+
+.btn-base-alt {
+	background: transparent;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&.btn-white {
+		border: 2px solid #fff;
+		color: #fff;
+
+		&:hover {
+			background: #fff;
+		}
+	}
+}
+
+.multiple-btn {
+	.btn {
+		margin-right: 10px;
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| ICONOGRAPHY
+|----------------------------------------------------------------------------
+*/
+.icon {
+	display: inline-block;
+	font: normal normal normal 14px/1 "nf";
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| MISC
+|----------------------------------------------------------------------------
+*/
+.media-left,
+.media>.pull-left {
+	padding-right: 15px;
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| SECTIONS
+|----------------------------------------------------------------------------
+*/
+.service,
+.app-description,
+.app-feature,
+.testimonials-1,
+.pricing-table-2,
+.purchase-book,
+.video,
+.contact {
+	padding: 125px 0 80px;
+
+	@media screen and ( max-width: 480px ) {
+		padding: 100px 0 55px;
+	}
+}
+
+.pricing-table-1,
+.testimonials-2 {
+
+	.overlay {
+		padding: 125px 0 80px;
+
+		@media screen and ( max-width: 480px ) {
+			padding: 100px 0 55px;
+		}
+	}
+}
+
+.screenshots,
+.download {
+	padding: 125px 0;
+
+	@media screen and ( max-width: 480px ) {
+		padding: 100px 0;
+	}
+}
+
+.app-description,
+.testimonials-1,
+.pricing-table-2,
+.video,
+.footer {
+	background: @section_bg_dark;
+
+	.title-text {
+		color: @title_text_alt;
+	}
+}
+
+
+/*************** HEADING ***************/
+.title-text {
+	color: @title_text_base;
+	font-weight: 300;
+
+	span {
+		font-weight: 500;
+	}
+}
+
+.column-heading {
+	margin-top: 50px;
+	
+	.icon:before {
+		font-size: 70px;
+	}
+
+	.title-text {
+		margin: 40px 0 40px;
+	}
+}
+
+.section-heading {
+	margin-bottom: 75px;
+
+	.title-text {
+		margin: 0 0 20px;
+	}
+}

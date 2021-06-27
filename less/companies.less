@@ -1,0 +1,60 @@
+/*
+|----------------------------------------------------------------------------
+| COMPANIES
+|----------------------------------------------------------------------------
+*/
+.companies {
+	padding: 80px 0 60px;
+	text-align: center;
+	background-color: #fff;
+
+	.title-text {
+		font-weight: 600;
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	ul {
+		padding: 20px 0;
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			padding: 10px;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			a {
+				display: block;
+
+				&:hover {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+
+			img {
+				opacity: 0.6;
+				width: 100%;
+				max-width: 120px;
+				height: auto;
+				transition: all 0.3s;
+			}
+
+			@media screen and ( min-width: 768px ) {
+				display: inline-block;
+			}
+
+			@media screen and ( min-width: 992px ) {
+				padding: 10px 20px;
+			}			
+		}
+	}
+}

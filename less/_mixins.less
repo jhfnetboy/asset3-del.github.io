@@ -1,0 +1,20 @@
+.overlay(@color: #000000, @alpha: 0.75) {
+	background-color: rgba(red(@color), green(@color), blue(@color), @alpha);
+	max-height: 100%;
+}
+
+.gradient(@from: #000, @to: #fff, @alpha: 0.75) {
+	// background-color: @from;
+	background-image: -webkit-gradient(linear, left top, right top,
+													from(rgba(red(@from), green(@from), blue(@from), @alpha)),
+													to(rgba(red(@to), green(@to), blue(@to), @alpha))
+												);
+	background-image: -webkit-linear-gradient(left, rgba(red(@from), green(@from), blue(@from), @alpha),
+																			rgba(red(@to), green(@to), blue(@to), @alpha));
+	background-image: -moz-linear-gradient(left, rgba(red(@from), green(@from), blue(@from), @alpha),
+																			rgba(red(@to), green(@to), blue(@to), @alpha));
+	background-image: -o-linear-gradient(left, rgba(red(@from), green(@from), blue(@from), @alpha),
+																			rgba(red(@to), green(@to), blue(@to), @alpha));
+	background-image: linear-gradient(to right, rgba(red(@from), green(@from), blue(@from), @alpha),
+																			rgba(red(@to), green(@to), blue(@to), @alpha));
+}

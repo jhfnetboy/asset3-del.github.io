@@ -1,0 +1,53 @@
+/*
+|----------------------------------------------------------------------------
+| TESTIMONIALS
+|----------------------------------------------------------------------------
+*/
+.testimonial {
+	background: #fff;
+	border-radius: 5px;
+	font-family: Lato, sans-serif;
+	padding: 45px;
+	margin: 0;
+	font-size: 16px;
+	border: none;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		left: 8px;
+		top: -20px;
+		content: '“';
+		font-size: 280px;
+		line-height: 1;
+		height: 100%;
+		opacity: 0.2;
+	}
+
+	p {
+		font-style: italic;
+	}
+
+	cite {
+		font-style: normal;
+		margin-top: 30px;
+		display: block;
+		font-size: 18px;
+
+		span {
+			color: @title_text_base;
+			font-size: 14px;
+		}
+	}
+}
+
+
+/******************** TESTIMONIALS - 2 ********************/
+
+.testimonials-2 {
+
+	&.image-bg {
+		background: url(../images/pricing-table-background.jpg) top center no-repeat;
+		background-size: cover;
+	}
+}

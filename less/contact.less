@@ -1,0 +1,41 @@
+/*
+|----------------------------------------------------------------------------
+| CONTACT
+|----------------------------------------------------------------------------
+*/
+.contact {
+	background-color: #fff;
+}
+
+.get-in-touch {
+
+	&+ .get-in-touch {
+		margin-top: 45px;
+	}
+
+	.title-text {
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+
+	.phone {
+		&:before {
+			margin-right: 10px;
+			vertical-align: middle;
+			font-family: nf;
+			content: "\e1cc";
+		}
+	}
+
+	.form-group {
+		margin-bottom: 30px;
+	}
+
+	.form-control {
+		background-color: @section_bg_dark;
+
+		&:focus {
+			background-color: transparent;
+		}
+	}
+}

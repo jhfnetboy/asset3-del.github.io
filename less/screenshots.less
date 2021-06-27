@@ -1,0 +1,37 @@
+/*
+|----------------------------------------------------------------------------
+| SCREENSHOTS
+|----------------------------------------------------------------------------
+*/
+.screenshots {
+	background-color: #fff;
+}
+
+/******************** OWL CONTROLS CUSTOM ********************/
+.owl-theme {
+	.owl-nav {
+		margin-top: 25px;
+	}
+
+	.owl-nav {
+		[class*='owl-'] {
+			background: darken(@section_bg_dark, 25%);
+			border-radius: 0;
+			padding: 5px 15px;
+			transition: all 0.3s;
+		}
+	}
+
+	.owl-dots {
+		.owl-dot {
+			span {
+				width: 20px;
+				height: 10px;
+				background: darken(@section_bg_dark, 25%);
+				border-radius: 0;
+				margin: 0 3px;
+				transition: all 0.3s;
+			}
+		}
+	}
+}

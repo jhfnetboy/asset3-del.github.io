@@ -1,0 +1,125 @@
+/*
+|----------------------------------------------------------------------------
+| PRICING TABLE
+|----------------------------------------------------------------------------
+*/
+.pricing-table {
+
+	&.image-bg {
+		background: url(../images/pricing-table-background.jpg) top center no-repeat;
+		background-size: cover;
+	}
+}
+
+.single-table {
+	background: #fff;
+	text-align: center;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid transparent;
+
+	.heading {
+		font-size: 20px;
+		font-weight: 500;
+		padding: 25px 15px;
+		margin: -1px;
+	}
+
+	.pricing {
+		padding: 15px 15px 25px;
+		font-family: Raleway, sans-serif;
+		margin: 0 -1px;
+		font-weight: 300;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-top: 1px solid transparent;
+	}
+
+	.currency {
+		font-size: 25px;
+	}
+
+	.rate {
+		font-size: 60px;
+		line-height: 1;
+	}
+
+	.features {
+		padding: 30px 15px 45px;
+
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				list-style-type: none;
+				line-height: 2.3;
+			}
+		}
+
+		.btn {
+			margin-top: 30px;
+		}
+	}
+
+	.affirmative,
+	.negative {
+		&:before {
+			margin-right: 5px;
+			font-family: "nf";
+		}
+	}
+
+	.affirmative:before {
+		content: "\e10e";
+	}
+
+	.negative:before {
+		content: "\e235";
+	}
+}
+
+.pricing-table-1 {
+	.single-table {
+		border-color: @section_bg_dark;
+
+		header {
+			color: @title_text_base;
+		}
+
+		.heading {
+			background: @section_bg_dark;
+		}
+	}
+}
+
+.pricing-table-2 {
+	.single-table {
+		border-color: #fff;
+
+		header {
+			color: @title_text_alt;
+		}
+
+		&.active {
+			color: #fff;
+
+			.pricing {
+				color: #fff;
+				border-top: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			.affirmative:before,
+			.negative:before {
+				color: rgba(0, 0, 0, 0.2);
+			}
+
+			.btn {
+				background: #fff;
+
+				&:hover {
+					background: transparent;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

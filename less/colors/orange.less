@@ -1,0 +1,296 @@
+@import "../_mixins";
+
+@base_color: #ea8825;
+@gradient_fall: #AC5330;
+
+
+/*
+|----------------------------------------------------------------------------
+| GLOBAL
+|----------------------------------------------------------------------------
+*/
+a {
+	color: @base_color;
+}
+
+.btn-base {
+	background: @base_color;
+
+	&:hover {
+		background: darken(@base_color, 8%);
+	}
+}
+
+.btn-base-alt {
+	border: 2px solid @base_color;
+	color: @base_color;
+
+	&:hover {
+		background: @base_color;
+	}
+
+	&.btn-white {
+
+		&:hover {
+			color: @base_color;
+		}
+	}
+}
+
+.column-heading {
+	
+	.icon:before {
+		color: @base_color;
+	}
+}
+
+
+/*
+|----------------------------------------------------------------------------
+| APP FEATURE
+|----------------------------------------------------------------------------
+*/
+.app-feature {
+	
+	.features {
+
+		.icon:before {
+			color: @base_color;
+		}
+
+		h5 {
+			color: @base_color;
+		}
+	}
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+| CONTACT
+|----------------------------------------------------------------------------
+*/
+.get-in-touch {
+
+	.phone {
+		&:before {
+			color: @base_color;
+		}
+	}
+}
+
+
+/*
+|----------------------------------------------------------------------------
+| FOOTER
+|----------------------------------------------------------------------------
+*/
+.social-sites {
+	li a:hover {
+		.icon {
+			color: @base_color;
+		}
+	}
+}
+
+
+/******************** FORMS ********************/
+.form-control:focus {
+	border-color: @base_color;
+}
+
+
+/******************** NAVBAR ********************/
+.fog-navbar {
+	.navbar-toggle {
+		background-color: @base_color;
+
+		.icon-bar {
+			background-color: #fff;
+		}
+	}
+}
+
+.fog-navbar-nav > li {
+	> a:hover {
+		color: @base_color;
+	}
+
+	&.current {
+		> a {
+			color: @base_color;
+		}
+	}
+
+	&.nav-btn {
+		a {
+			border-color: #fff;
+			background-color: @base_color;
+			color: #fff;
+
+			&:hover {
+				border-color: darken(@base_color, 8%);
+				background-color: darken(@base_color, 8%);
+			}
+		}
+	}
+}
+
+
+/******************** PRICING TABLE ********************/
+.pricing-table-1 {	
+	.single-table {
+		.affirmative:before {
+			color: @base_color;
+		}
+
+		&.active {
+			.heading {
+				background: @base_color;
+				color: #fff;
+			}
+
+			.pricing {
+				color: @base_color;
+			}
+		}
+	}
+}
+
+
+.pricing-table-2 {
+	.single-table {
+		.heading {
+			background: @base_color;
+			color: #fff;
+		}
+
+		&.active {
+			background: @base_color;
+			border-color: @base_color;
+
+			.btn {
+				color: @base_color;
+			}
+		}
+	}
+}
+
+
+/******************** OWL CONTROLS CUSTOM ********************/
+.owl-theme {
+	.owl-nav {
+		[class*='owl-'] {
+
+			&:hover {
+				background: @base_color;
+			}
+		}
+	}
+
+	.owl-dots {
+		.owl-dot {
+			
+			&.active,
+			&:hover {
+				span {
+					background: @base_color;
+				}
+			}
+		}
+	}
+}
+
+/******************** SERVICE SECTIONS ********************/
+.service-item {
+	.icon {
+		color: @base_color;
+	}
+}
+
+.service-2 {
+	
+	.service-item {
+		.icon {
+			border-color: @base_color;
+		}
+
+		&:hover {
+			.icon {
+				background: @base_color;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+/******************** TESTIMONIALS ********************/
+.testimonial {
+	cite {
+		color: @base_color;
+	}
+}
+
+
+/*
+|----------------------------------------------------------------------------
+| BACKGROUNDS
+|----------------------------------------------------------------------------
+*/
+.solid-color {
+	.overlay{
+		.overlay(@base_color, 1);
+	}
+
+	&.gradient-color {
+		.overlay {
+			.gradient(@base_color, @gradient_fall, 1);
+		}
+	}
+
+	&.pricing-table-1 {
+		.single-table {
+
+			&.active {
+				.heading {
+					background: darken(@base_color, 12%);
+				}
+			}
+		}
+	}
+}
+
+.transparent-color {
+	.overlay{
+		.overlay(@base_color, 0.9);
+	}
+}
+
+.gradient-color {
+	.overlay {
+		.gradient(@base_color, @gradient_fall, 0.7);
+	}
+}
+
+.solid-color,
+.transparent-color,
+.gradient-color {
+	&.home {
+		.btn-base:not(.btn-block) {
+			border-color: #fff;
+			background: #fff;
+			color: @base_color;
+
+			&:hover {
+				background: transparent;
+				color: #fff;
+			}
+		}
+	}
+
+	.sub-title {
+		color: darken(#fff, 12%);
+	}
+}
